@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      ul {
+        text-align: left;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta
+      name="keywords"
+      content="Visakan school,visakan school,school,CBSE,Madurai,visakan school CBSE Madurai,school CBSE Madurai,visakan,CBSE Madurai"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="At Visakan, we believe that each kid has their own and unique bunch of talents and we strive to make them better at it. With teachers equipped to educate students in the best possible manner, parents can be rest assured that their children are in safe hands."
+    />
+    <meta name="application-name" content="Visakan school CBSE" />
+    <meta name="author" content="Prakash D" />
+    <meta name="title" content="Visakan School CBSE -  Madurai" />
+    <link rel="apple-touch-icon" href="favicon.PNG" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+
+    <link rel="stylesheet" href="App.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/components/Home/css/style.css" />
+    <link rel="stylesheet" href="/components/Home/css/events.css" />
+    <link rel="stylesheet" href="/components/Home/css/testimonials.css" />
+    <title>Visakan school CBSE - Madurai</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="App" id="root">
+      <div>
+        <div>
+          <!-- <NavBar navRef={navRef} /> -->
+          <div class="navbox" id="navbar">
+            <div class="close" onclick="closeNavBar()">
+              <!-- <ChevronLeftRounded style="font-size: xx-large" /> -->
+              close
+            </div>
+
+            <div class="navbar">
+              <div class="top-logo">
+                <img
+                  width="300"
+                  height="70"
+                  src="/images/logo.png"
+                  alt="Logo"
+                />
+              </div>
+              <div class="navlinks">
+                <a class="link" href="/"> Home </a>
+                <a class="link" href="/infrastructure.html"> Infrastructure </a>
+                <div class="dropdown">
+                  <div class="link">
+                    Education
+                    <!-- <KeyboardArrowDown
+                      style={{
+                        display: "inline-flex",
+                        verticalAlign: "middle",
+                        height: "20px",
+                      }}
+                      /> -->
+                  </div>
+                  <div class="dropdown-box drop-open">
+                    <a class="dropdown-item link" href="/kindergarten.html">
+                      Kindergarten
+                    </a>
+                    <a class="dropdown-item link" href="/primary.html">
+                      Primary
+                    </a>
+                    <a class="dropdown-item link" href="/secondary.html">
+                      Secondary
+                    </a>
+                    <a class="dropdown-item link" href="/senior.html">
+                      Senior Secondary
+                    </a>
+                  </div>
+                </div>
+
+                <a class="link" href="/gallery.html"> Gallery </a>
+                <a class="link" href="/admission.html"> Admission </a>
+                <a class="link" href="/careers.html"> Careers </a>
+                <a class="link" href="/contact.html"> Contact </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="logo">
+            <span
+              style="float: left; display: table-cell; vertical-align: middle"
+              class="menu"
+              onclick="openNavBar()"
+            >
+              <span>
+                <!-- <MenuRounded /> -->
+                Menu
+              </span>
+            </span>
+            <img class="logo-image" src="/images/logo.png" alt="Logo" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div>
+        <div class="footer grid-2">
+          <div style="text-align: center; padding: 1%">
+            <img class="logo-image" src="/images/logo.png" alt="Logo" />
+            <p>
+              At Visakan, we believe that each kid has their own and unique
+              bunch of talents and we strive to make them better at it.
+            </p>
+            <div
+              style="
+                display: flex;
+                justify-content: space-around;
+                width: 150px;
+                margin: auto;
+              "
+            >
+              <a
+                style="color: white"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/Visakan-School-CBSE-566566400154128"
+              >
+                <!-- <FacebookRounded /> -->
+                F
+              </a>
+
+              <a
+                style="color: white"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/visakan_school_cbse/"
+              >
+                <!-- <Instagram /> -->
+                I
+              </a>
+              <a
+                target="_blank"
+                style="color: white"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/UC_G0EaQvIVoNcGc8YhO2UEA"
+              >
+                <!-- <YouTube /> -->
+                Y
+              </a>
+            </div>
+          </div>
+          <div class="grid-2 footer">
+            <div>
+              <h2>Quick links</h2>
+              <div>
+                <div>
+                  <a class="link-down" href="/"> Home </a>
+                  <a class="link-down" href="/infrastructure.html">
+                    Infrastructure
+                  </a>
+                  <a class="link-down" href="/gallery.html"> Gallery </a>
+                  <a class="link-down" href="/admission.html"> Admission </a>
+                  <a class="link-down" href="/careers.html"> Carreers </a>
+
+                  <a class="link-down" href="/contact.html"> Contact </a>
+                </div>
+              </div>
+            </div>
+            <div style="color: white">
+              <h3>Address</h3>
+              <a
+                class="a-down"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.google.com/maps/place/Visakan+School+(CBSE+)/@9.8968874,78.0883081,17z/data=!3m1!4b1!4m5!3m4!1s0x3b00cf96437788ff:0x1f18ae9d36f2eca4!8m2!3d9.8968821!4d78.0904968"
+              >
+                Visakan School, Alagusundaram Nagar, Bykkara, Madurai - 625004
+              </a>
+              <h3>Phone Number:</h3>
+              <a href="tel:0452-2693886" class="a-down"> 0452 - 2693886 </a>
+              <a href="tel:+918870936402" class="a-down"> +91 88709 36402 </a>
+              <h3>Email:</h3>
+              <a
+                class="a-down"
+                target="blank"
+                rel="noreferrer"
+                href="mailto:visakanschool@gmail.com"
+              >
+                visakanschool@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+    </div>
+  </body>
+  <script src="/home.js"></script>
+</html>
