@@ -1,0 +1,16 @@
+@media screen and (min-width: 100px) {
+  .testimonial {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid rgb(3, 170, 3);
+    border-radius: 10px;
+    background-color: rgb(23, 61, 28);
+  }
+}
+@media screen and (min-width: 500px) {
+  .testimonial {
+    width: 500px;
+  }
+}
