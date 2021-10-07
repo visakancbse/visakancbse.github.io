@@ -1,533 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-      * {
-        font-family: "Times New Roman", Times, serif;
-      }
-      ul {
-        text-align: left;
-      }
-    </style>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.png" />
-    <meta
-      name="keywords"
-      content="Visakan school,visakan school,school,CBSE,Madurai,visakan school CBSE Madurai,school CBSE Madurai,visakan,CBSE Madurai"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="At Visakan, we believe that each kid has their own and unique bunch of talents and we strive to make them better at it. With teachers equipped to educate students in the best possible manner, parents can be rest assured that their children are in safe hands."
-    />
-    <meta name="application-name" content="Visakan school CBSE" />
-    <meta name="author" content="Prakash D" />
-    <meta name="title" content="Visakan School CBSE -  Madurai" />
-    <link rel="apple-touch-icon" href="favicon.PNG" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+@media screen and (min-width: 100px) {
+  .event-box {
+    /* padding: 1%; */
+  }
+  .event-list {
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .event-date {
+    text-align: center;
+    /* padding: 1%; */
+  }
+  .event-name {
+    width: 100%;
+    margin: auto;
+    /* padding: 0% 5%; */
+  }
+  .grid-2s {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    /* padding: 1% 0%; */
+    border-bottom: 1px solid black;
+  }
+}
+@media screen and (min-width: 500px) {
+  .event-box {
+    padding: 1%;
+  }
+  .event-list {
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1%;
+  }
 
-    <link rel="stylesheet" href="App.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/components/Home/css/style.css" />
-    <link rel="stylesheet" href="/components/Home/css/events.css" />
-    <link rel="stylesheet" href="/components/Home/css/testimonials.css" />
-    <link rel="stylesheet" href="/components/Gallery/gallery.css" />
-    <title>Visakan school CBSE - Madurai</title>
-  </head>
-  <body>
+  .event-date {
+    text-align: center;
+    padding: 1%;
+  }
+  .event-name {
+    width: 100%;
+    margin: auto;
+    padding: 0% 5%;
+  }
+  .grid-2s {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    padding: 1% 0%;
+    border-bottom: 1px solid black;
+  }
+}
 
-    <div class="App" id="root">
-      <div
-      style="background-color: rgba(0,0,0,0.8);color: white;overflow: hidden"
-      
-    ><!--Live event marquee-->
-      <div className="marquee">
-        Upcoming Event: <span style="font-size: x-large" >name </span>
-        <span>date/month </span>
-        <span style="font-size: x-small" >
-          
-          time 
-          place
-        </span>
-      </div>
-      </div>
-      
-      <div>
-        <div class="container">
-          <!-- <NavBar navRef={navRef} /> -->
-          <div class="navbox" id="navbar">
-            <div class="close" onclick="closeNavBar()">
-              <!-- <ChevronLeftRounded style="font-size: xx-large" /> -->
-              <img style="background-color: white;" src="https://img.icons8.com/external-becris-lineal-becris/28/000000/external-left-arrow-mintab-for-ios-becris-lineal-becris.png"/>
-            </div>
+.event-date .h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  display: block;
+  font-style: italic;
+}
 
-            <div class="navbar">
-              <div class="top-logo">
-                <img
-                  width="300"
-                  height="70"
-                  src="/images/logo.png"
-                  alt="Logo"
-                />
-              </div>
-              <div class="navlinks">
-                <a class="link active" href="/"> Home </a>
-                <a class="link" href="infrastructure.html"> Infrastructure </a>
-                <div class="dropdown">
-                  <div class="link">
-                    Education
-                    <!-- <KeyboardArrowDown
-                      
-                      /> -->
-                      <!-- <img src="https://img.icons8.com/material-sharp/24/000000/expand-arrow--v1.png"/> -->
-                  </div>
-                  <div class="dropdown-box drop-open">
-                    <a
-                      class="dropdown-item link"
-                      href="/kindergarten.html"
-                    >
-                      Kindergarten
-                    </a>
-                    <a
-                      class="dropdown-item link"
-                      href="/primary.html"
-                    >
-                      Primary
-                    </a>
-                    <a
-                      class="dropdown-item link"
-                      href="/secondary.html"
-                    >
-                      Secondary
-                    </a>
-                    <a
-                      class="dropdown-item link"
-                      href="/senior.html"
-                    >
-                      Senior Secondary
-                    </a>
-                  </div>
-                </div>
-
-                <a class="link" href="/gallery.html"> Gallery </a>
-                <a class="link" href="/admission.html">
-                  Admission
-                </a>
-                <a class="link" href="/careers.html"> Careers </a>
-                <a class="link" href="/contact.html"> Contact </a>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="logo">
-            <span
-              style="float: left; display: table-cell; vertical-align: middle"
-              class="menu"
-              onclick="openNavBar()"
-            >
-              <span>
-                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
-              </span>
-            </span>
-            <img class="logo-image" src="/images/logo.png" alt="Logo" />
-          </div>
-
-          <div class="image-slider">
-            <img class="image" src="/images/correspondent.JPG" alt="slider" />;
-            <div class="overlay">
-              <div class="overlay-content">
-                <h1 class="home-head">Space To Learn ! Space To Grow..!</h1>
-                <p>Visakan School is</p>
-                <p>
-                  "The School with different to give the Overall Development for
-                  your child"
-                </p>
-                <a class="anchor-button" href="/application-form.html">
-                  Apply now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image-slider">
-            <img class="image" src="/images/slider-bg2.JPG" alt="slider" />;
-            <div class="overlay">
-              <div class="overlay-content">
-                <h1 class="home-head">Space To Learn ! Space To Grow..!</h1>
-                <p>Visakan School is</p>
-                <p>
-                  "The School with different to give the Overall Development for
-                  your child"
-                </p>
-                <a class="anchor-button" href="/application-form.html">
-                  Apply now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image-slider">
-            <img class="image" src="/images/slider-bg3.JPG" alt="slider" />;
-            <div class="overlay">
-              <div class="overlay-content">
-                <h1 class="home-head">Space To Learn ! Space To Grow..!</h1>
-                <p>Visakan School is</p>
-                <p>
-                  "The School with different to give the Overall Development for
-                  your child"
-                </p>
-                <a class="anchor-button" href="/application-form.html">
-                  Apply now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image-slider">
-            <img class="image" src="/images/slider-bg4.JPG" alt="slider" />;
-            <div class="overlay">
-              <div class="overlay-content">
-                <h1 class="home-head">Space To Learn ! Space To Grow..!</h1>
-                <p>Visakan School is</p>
-                <p>
-                  "The School with different to give the Overall Development for
-                  your child"
-                </p>
-                <a class="anchor-button" href="/application-form.html">
-                  Apply now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          
-          <div class="card">
-            <img
-              class="card-image"
-              src="components/Home/images/kindergarten.JPG"
-              alt="Kindergarten"
-            />
-            <h2>Kindergarten</h2>
-            <a class="anchor-button"  href="/kindergarten.html">
-              Learn more
-            </a>
-          </div>
-          <div class="card">
-            <img
-              class="card-image"
-              src="components/Home/images/primary.JPG"
-              alt="primary"
-            />
-            <h2>Primary</h2>
-            <a class="anchor-button" href="/primary.html">
-              Learn more
-            </a>
-          </div>
-          <div class="card">
-            <img
-              class="card-image"
-              src="components/Home/images/secondary.JPG"
-              alt="Secondary"
-            />
-            <h2>Secondary</h2>
-            <a class="anchor-button" href="/primary.html">
-              Learn more
-            </a>
-          </div>
-          <div class="card">
-            <img
-              class="card-image"
-              src="components/Home/images/senior-secondary.JPG"
-              alt="senior-secondary"
-            />
-            <h2>Senior Secondary</h2>
-            <a class="anchor-button" href="/senior.html">
-              Learn more
-            </a>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="img">
-            <img
-              width="90%"
-              height="90%"
-              src="./images/about.jpg"
-              alt="school"
-            />
-          </div>
-          <div>
-            <h1 style="opacity: 0.8; text-transform: uppercase">About us</h1>
-            <p style="opacity: 0.75; font-style: italic">
-              At Visakan, we believe that each kid has their own and unique
-              bunch of talents and we strive to make them better at it.
-            </p>
-            <p style="opacity: 0.75; font-style: italic">
-              With teachers equipped to educate students in the best possible
-              manner, parents can be rest assured that their children are in
-              safe hands.
-            </p>
-            <p style="opacity: 0.75; font-style: italic">
-              Visakan School follows the CBSE Syllabus through English medium.
-              We provide education with an objective to empowering students to
-              sit for the CBSE Board and train our students accordingly using
-              the NCERT syllabi in the following subjects: Communicative
-              English, Indian languages, Mathematics, Science, Social Science.
-              Our school is equipped with the state-of-the-art classrooms and
-              physical education facilities.
-            </p>
-
-            <div style="padding-bottom: 2%">
-              <a
-                class="anchor-button"
-                href="/about.html"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div style="text-align: center">
-            <h1 style="font-family: Times new roman; padding: 1%">
-              The Special Features of Visakan School
-            </h1>
-            <div style="font-style: italic" class="grid-2">
-              <div>
-                <ul class="list">
-                  <li>Montessori Trained Staffs for Grade KG & UKG.</li>
-
-                  <li>Well furnished & spacious class room.</li>
-
-                  <li>
-                    Value based teaching through various practical activities.
-                  </li>
-
-                  <li>Enable the higher Order thinking level.</li>
-
-                  <li>Modern updated computer lab.</li>
-
-                  <li>Well equipped science and math lab.</li>
-
-                  <li>Transport facility in & around Madurai.</li>
-
-                  <li>Life skill activities.</li>
-                </ul>
-              </div>
-              <div>
-                <ul class="list">
-                  <li>sports & Games.</li>
-
-                  <li>ECA& CCA classes.</li>
-
-                  <li>Well equipped Library.</li>
-
-                  <li>Health & Hygiene care.</li>
-
-                  <li>Safety & Security.</li>
-
-                  <li>Ro Water facility.</li>
-
-                  <li>Transport facility.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="event-box">
-          <div class="event-list">
-            <h1 style="text-decoration: underline">
-              <!-- <EventAvailable style="font-size:50px;transform:translateY(30%)"/>  -->
-              Upcoming Events
-            </h1>
-            <div className="grid-2s">
-              <div className="event-date">
-                <span className="h1">event date</span>
-                <span className="h2">event month</span>
-              </div>
-              <div className="event-name">
-                <span
-                  style="display: block;font-size: x-large;font-weight: bolder"
-                  
-                >
-                  Event name
-                </span>
-                <p style=" font-size: x-small;font-style:italic" >
-                  
-                  event time 
-                   event place
-                </p>
-              </div>
-            </div>
-            <!-- <div id="upcoming-events">
-              <h1 style="color: red">Vijaya Dhasami</h1>
-            </div> -->
-          </div>
-        </div>
-        <div class="grid-2 red-grad">
-          <div class="img">
-            <img
-              height="100%"
-              width="100%"
-              src="./images/school.jpg"
-              alt="school"
-            />
-          </div>
-          <div style="text-align: center;">
-            <h1 style="opacity: 0.8; text-transform: uppercase">
-              Apply for admission
-            </h1>
-            <h3 style="opacity: 0.75; font-style: italic">
-              Admissions open for Academic Year 2021 - 2022
-            </h3>
-            <p style="opacity: 0.75; font-style: italic">
-              We invite you to join our vision for your child’s future and
-              en-roll for admissions by filling the online form. The offline
-              admission forms can be collected from the Admin Office also.
-            </p>
-            <a
-              
-              href="application-form.html"
-              class="anchor-button jump"
-            >
-              Apply now
-            </a>
-          </div>
-        </div>
-        <div style="padding: 1%">
-          <div>
-            <div class="testimonial">
-              <h3>TESTIMONIAL</h3>
-              <h1>What Parents say,</h1>
-              <p>
-                <i
-                  >Visakan school has ample space for education as well as other
-                  children's activities. The school also places focus on other
-                  extra-curricular activities unlike other schools which only
-                  claim to have them. It makes me happy to see a smiles on the
-                  faces of my children when I pick them up at school. I'm really
-                  glad that I chose Visakan for my kids.</i
-                >
-              </p>
-              <h5>S.Sathya Prabha</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="footer grid-2">
-          <div style="text-align: center; padding: 1%">
-            <img class="logo-image" src="/images/logo.png" alt="Logo" />
-            <p>
-              At Visakan, we believe that each kid has their own and unique bunch
-              of talents and we strive to make them better at it.
-            </p>
-            <div
-              style="display:flex;justify-content:space-around;width: 150px;margin: auto"            >
-              <a
-                style="color: white"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.facebook.com/Visakan-School-CBSE-566566400154128"
-              >
-                <!-- <FacebookRounded /> -->
-                <img style="background-color: white;" src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png"/>
-              </a>
-  
-              <a
-                style="color:white"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/visakan_school_cbse/"
-              >
-                <!-- <Instagram /> -->
-                <img style="background-color: white;" src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png"/>
-              </a>
-              <a
-                target="_blank"
-                style="color:white"
-                rel="noreferrer"
-                href="https://www.youtube.com/channel/UC_G0EaQvIVoNcGc8YhO2UEA"
-              >
-                <!-- <YouTube /> -->
-                <img style="background-color: white;" src="https://img.icons8.com/material-outlined/24/000000/youtube-play--v1.png"/>
-              </a>
-            </div>
-          </div>
-          <div class="grid-2 footer">
-            <div>
-              <h2>Quick links</h2>
-              <div>
-                <a class="link-down" href="/"> Home </a>
-                  <a class="link-down" href="/infrastructure.html">
-                    Infrastructure
-                  </a>
-                  <a class="link-down" href="/gallery.html"> Gallery </a>
-                  <a class="link-down" href="/admission.html"> Admission </a>
-                  <a class="link-down" href="/careers.html"> Carreers </a>
-
-                  <a class="link-down" href="/contact.html"> Contact </a>
-              </div>
-            </div>
-            <div style="color:white">
-              <h3>Address</h3>
-              <a
-                class="a-down"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.google.com/maps/place/Visakan+School+(CBSE+)/@9.8968874,78.0883081,17z/data=!3m1!4b1!4m5!3m4!1s0x3b00cf96437788ff:0x1f18ae9d36f2eca4!8m2!3d9.8968821!4d78.0904968"
-              >
-                Visakan School, Alagusundaram Nagar, Pykkara, Madurai - 625004
-              </a>
-              <h3>Phone Number:</h3>
-              <a href="tel:0452-2693886" class="a-down">
-                0452 - 2693886
-              </a>
-             
-              <h3>Email:</h3>
-              <a
-                class="a-down"
-                target="blank"
-                rel="noreferrer"
-                href="mailto:visakanschool@gmail.com"
-              >
-                visakanschool@gmail.com
-              </a>
-            </div>
-        
-          </div>
-        </div>
-      
-    </div>
-    <!-- <template>
-      <div class="grid-2s">
-        <div class="event-date">
-          <span class="h1">{event.date}</span>
-          <span class="h2">{event.month}</span>
-        </div>
-        <div class="event-name">
-          <span
-            style="display: block; font-size: x-large; font-weight: bolder"
-            id="event-name"
-          >
-            {event.name}
-          </span>
-          <p style="font-size: x-small; font-style: italic">
-            <Schedule style={{ fontSize: "x-small" }} /> 
-            <span id="event-time">{event.time} </span>
-
-            <LocationOn style={{ fontSize: "x-small" }} /> 
-            <span id="event-time">{event.place}</span>
-          </p>
-        </div>
-      </div>
-    </template> -->
-  </body>
-  <script src="/home.js"></script>
-</html>
+.event-date .h2 {
+  display: block;
+  font-weight: bolder;
+  font-size: x-large;
+  border-bottom: 5px solid yellowgreen;
+  border-radius: 10px;
+  font-style: italic;
+}
